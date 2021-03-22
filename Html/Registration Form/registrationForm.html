@@ -32,10 +32,19 @@
     </div>
     <p>Why you are registering for orbit.</p>
     <div><textarea name="comment" cols="42" rows="17"></textarea></div>
-    <div><p>flight plan</p></div>
     <div>
-        <input type="checkbox" name = preflight value="bold">
+        <p>Current Flight Plan
+            <select name="Flight Plan">
+                <option>Transitional</option>
+                <option>Logarithmic</option>
+                <option>High</option>
+                <option>Low</option>
+            </select>
+        </p>
     </div>
-
+    <div>
+        <p>Pre-Flight Check Completion<input type="checkbox" name = preflight value="bold"></p>
+    </div>
+    <input type="submit" value="Register!">
 </body>
 </html>
