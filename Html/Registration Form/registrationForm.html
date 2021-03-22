@@ -9,12 +9,33 @@
     <h1>Registration Form</h1>
     <div><p>First Name: *<input type="text" name="name" placeholder="Your name..."></p></div>
     <div><p>Last Name: *<input type="text" name="name" placeholder="Your name..."></p></div>
-    <div><p>Email Address: *<input type="text" name="email"></p></div>
+    <div><p>Email Address: *<input type="text" name="email" placeholder="Example@Email.com"></p></div>
     <div><p>Birthday: *<input type="date"></p></div>
     <div><p>Password: *<input type="password"></p></div>
     <div><p>Confirm Password: *<input type="password"></p></div>
-    <div><p>Race:</p></div>
-    <div><input type="radio"></div>
+    <div><p>Solar Species:</p></div>
+    <div>
+        <input type="radio" name="font" value="bold" id="bold">
+            <label for="bold"><strong>Human</strong></label>
+        <input type="radio" name="font" value="bold" id="bold">
+            <label for="bold"><strong>Cat</strong></label>
+        <input type="radio" name="font" value="normal" id="bold">
+            <label for="normal">Dog</label>
+        <input type="radio" name="font" value="bold" id="bold">
+            <label for="bold"><strong>Martian</strong></label>
+        <input type="radio" name="font" value="bold" id="bold">
+            <label for="bold"><strong>Other</strong></label>
+    </div>
+    <div>
+        <input type = "checkbox" name = "accept" id="accept">
+        <label for="accept">I agree</label>
+    </div>
+    <p>Why you are registering for orbit.</p>
+    <div><textarea name="comment" cols="42" rows="17"></textarea></div>
+    <div><p>flight plan</p></div>
+    <div>
+        <input type="checkbox" name = preflight value="bold">
+    </div>
 
 </body>
 </html>
