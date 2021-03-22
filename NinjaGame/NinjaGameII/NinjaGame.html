@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <div id='background'>
+            <div id='character' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+        </div>
+        <script> 
+            var topValue = 100, leftValue = 450, moveTooFar = false, moveIteration = 1;
+            document.onkeydown = function(e){
+
+                function moveCharacter(keyValue, moveValue, direction, topOrLeft) {
+                    if (e.keyCode == keyValue) {
+                        moveValue += direction;
+                        //Is the character going to move off screen? 
+                        if(moveValue > 500 || moveValue < 0){moveTooFar = true; moveValue -= direction;}
+                        else{moveTooFar = false;}
+                        
+                        //Move character in inputed direction.
+                        if(moveTooFar == false){
+                            if (topOrLeft == "top") {
+                                document.getElementById("character").style.top = moveValue + "px";
+                                //Is the player moving Up or Down?
+                                if(direction < 0){document.getElementById("character").style.backgroundImage = "url(img/top" + moveIteration +".png)";}
+                                else{document.getElementById("character").style.backgroundImage = "url(img/down" + moveIteration +".png)";}
+                                //Iterate the walking images.
+                                if(moveIteration == 1) {moveIteration++;}
+                                else{moveIteration--;}
+                            }
+                            else if (topOrLeft == "left") {
+                                document.getElementById("character").style.left = moveValue + "px";
+                                //Is the player moving Left or Right?
+                                if(direction < 0){document.getElementById("character").style.backgroundImage = "url(img/left" + moveIteration +".png)";}
+                                else{document.getElementById("character").style.backgroundImage = "url(img/right" + moveIteration +".png)";}
+                                //Iterate the walking images.
+                                if(moveIteration == 1) {moveIteration++;}
+                                else{moveIteration--;}
+                            }
+                        }
+                        //
+                    }
+                    return moveValue;
+                }
+                console.log(e);
+                //checking if the key pressed was 'W' 
+                //UP
+                topValue = moveCharacter(87,topValue,-10,"top");
+                //checking if the key pressed was 'S'
+                //DOWN
+                topValue = moveCharacter(83,topValue, 10,"top");
+                //LEFT
+                //checking if the key pressed was 'A'
+                leftValue = moveCharacter(65,leftValue,-10,"left");
+                //RIGHT
+                //checking if the key pressed was 'D'
+                leftValue = moveCharacter(68,leftValue, 10,"left");
+                
+            }
+        </script>
+    </body>
+</html>

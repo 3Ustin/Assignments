@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <style type="text/css">
+        {margin: 0;
+        padding: 0;}
+        #world{
+            margin: 100;
+            padding: 100;
+        }
+        div[class^= "wall"] {
+            background-color: orangered;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+        }
+        div[class^= "sushi"] {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url('img/sushi.png');
+            background-size: contain;
+        }
+        div[class^= "rice"] {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url('img/rice.png');
+            background-size: contain;
+        }
+        div[class^= "blank"] {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+        }
+        div[class^= "ninjaMan"] {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url('img/ninja.gif');
+            background-size: contain;
+            display: inline-block;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div h1>riceCount = 0</div>
+        <div id = "world">
+            <h1></h1>
+        </div>
+        
+    <script>
+        //world
+        var world = [
+            [1,1,1,1,1],
+            [1,2,2,2,1],
+            [1,2,2,2,1],
+            [1,3,2,2,1],
+            [1,4,2,2,1],
+            [1,2,1,2,1],
+            [1,2,2,2,1],
+            [1,1,1,1,1]
+        ];
+
+        //playerLocation for keeping track of player location in world[].
+        var playerLocation = [];
+        
+        //variables for counting rice and sushi.
+        var sushiCount = 0;
+        var riceCount = 0;
+
+        //dictinary to apply the correct div in the world array location.
+        var worldDic = {
+            0: 'blank',
+            1: 'wall',
+            2: 'sushi',
+            3: 'rice',
+            4: 'ninjaMan'
+        }
+        
+
+        
+        //function for creating html code and implementing it into the world div.
+        //world is always rectangle.
+        function drawWorld(r,c){
+            var output = "";
+            //push ten arrays yes yes
+            for(let row = 0; row < r; row++){
+                output += "<div class = 'row" + row + "'>";
+                for(let column = 0; column < c; column++){
+                    output += "<div class = '" +  worldDic[world[row][column]] + column + "'></div>";
+                    if(world[row][column] == 4){
+                        playerLocation = [row,column];
+                    }
+                }
+            }
+            console.log(playerLocation);
+            console.log(output);
+            document.getElementById('world').innerHTML = output;
+            return output;
+            
+        }
+
+        //calls drawWorld with world array as paramaters for width and heigth
+        var output = drawWorld(world.length,world[0].length);
+        
+        document.onkeydown = function(e){
+            function moveCharacter(down,right){
+
+                //replaces string at current location to blank.
+                output = output.replace(worldDic[world[playerLocation[0]][playerLocation[1]]] + (playerLocation[1]),"blank" + (playerLocation[1]));
+                
+                //finds current row in html
+                var rowLocation = output.search("row" + (playerLocation[0] + down));
+                
+                //splices output reason: to find first instance easier.
+                var outSub = output.substring(rowLocation);
+                
+                //replaces the location we're moving to with the player.
+                outSub = outSub.replace(
+                    worldDic[world[playerLocation[0] + down][playerLocation[1] + right]] + (playerLocation[1] + right),
+                    worldDic[world[playerLocation[0]][playerLocation[1]]] + (playerLocation[1] + right)
+                );
+                
+                //repairs string splice with replaced values.
+                output = output.substring(0,rowLocation) + outSub;
+
+                //modify world array.
+                world[playerLocation[0] + down][playerLocation[1] + right] = 4;
+                world[playerLocation[0]][playerLocation[1]] = 0;
+                
+                //update playerLocation
+                playerLocation[0] += down;
+                playerLocation[1] += right;
+                
+                //write ouput string to html page.
+                document.getElementById('world').innerHTML = output;
+            }
+
+            switch(e.keyCode){
+                //Key D -- RIGHT
+                case 68:
+                    if(world[playerLocation[0]][playerLocation[1] + 1] == 1){break;}
+                    if(world[playerLocation[0]][playerLocation[1] + 1] == 2){ sushiCount += 1}
+                    if(world[playerLocation[0]][playerLocation[1] + 1] == 3){ riceCount += 1}
+                    moveCharacter(0,1);
+                    break;
+                //Key A -- LEFT
+                case 65:
+                    if(world[playerLocation[0]][playerLocation[1] - 1] == 1){break;}
+                    if(world[playerLocation[0]][playerLocation[1] - 1] == 2){ sushiCount += 1}
+                    if(world[playerLocation[0]][playerLocation[1] - 1] == 3){ riceCount += 1}
+                    moveCharacter(0,-1);
+                    break;
+                //Key S -- DOWN
+                case 83:
+                    if(world[playerLocation[0] + 1][playerLocation[1]] == 1){break;}
+                    if(world[playerLocation[0] + 1][playerLocation[1]] == 2){ sushiCount += 1}
+                    if(world[playerLocation[0] + 1][playerLocation[1]] == 3){ riceCount += 1}
+                    moveCharacter(1,0);
+                    break;
+                //Key W -- UP
+                case 87:
+                    if(world[playerLocation[0] - 1][playerLocation[1]] == 1){break;}
+                    if(world[playerLocation[0] - 1][playerLocation[1]] == 2){ sushiCount += 1}
+                    if(world[playerLocation[0] - 1][playerLocation[1]] == 3){ riceCount += 1}
+                    moveCharacter(-1,0);
+                    break;
+            }
+        }
+        
+        
+    </script>
+    </body>
+</html>
+TODO:
+[20min.] between 100 - 120 figure out if can make moveCharacter to work for 'W' with Concatanated strings.
+If(yes){[20min]build nigiri, [40min]random world gen. etc.}
+If(no){[20min]update world[] then drawWorld() on each call of moveCharacter()}
