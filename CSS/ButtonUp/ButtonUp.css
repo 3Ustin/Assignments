@@ -1,0 +1,33 @@
+
+#search{
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: 1px solid rgb(10, 131, 90);
+    margin: 20px;
+    color: rgb(10, 131, 90);
+    background-color: rgb(182, 240, 220);
+}
+#plus{
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    border: 10px;
+    border-width: 10px;
+    background-color: rgb(10, 131, 90);
+    color: rgb(182, 240, 220);
+}
+#Account{
+    height: 50px;
+    width: 200px;
+    margin:20px;
+    padding-right: 50px;
+    border: 2px solid rgb(1, 19, 13);
+    background-color: rgb(10, 131, 90);
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgb(12, 97, 69);
+}
