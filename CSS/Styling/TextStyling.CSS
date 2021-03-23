@@ -1,0 +1,16 @@
+h1 {
+    background-color: coral;
+    color: black;
+}
+#Complete{
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+}
+
+h3,#Contact{
+    background-color: black;
+    color: aliceblue;
+    text-align: right;
+    text-decoration: underline;
+}
