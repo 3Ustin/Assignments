@@ -1,0 +1,30 @@
+.nav-title{
+    color: beige;
+}
+.nav-links{
+    padding: 5px;
+    height: 50px;
+    width: 800px;
+    background-color: darkolivegreen;
+    border: 2px solid lightsteelblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+[href].active{
+    color: beige;
+}
+[href]{
+    text-decoration: none;
+    color: lightblue;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px rgb(129, 140, 155);
+    border: 2px solid lightsteelblue;
+    color: rgb(83, 83, 83);
+}
