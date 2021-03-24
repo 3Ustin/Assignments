@@ -1,0 +1,44 @@
+h1{
+    display: block;
+    text-align: center;
+}
+.container{
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 600px;
+    height: 600px;
+}
+.top-bar{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(178, 223, 223);
+    height: 120px;
+    width: 560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.middle-bar{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(197, 230, 230);
+    height: 120px;
+    width: 560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bottom-bar{
+    padding: 20px;
+    background-color: rgb(181, 214, 214);
+    height: 120px;
+    width: 560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h5{
+    text-align: center;
+}
