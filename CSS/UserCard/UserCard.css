@@ -1,0 +1,76 @@
+/* WildCard for Font*/
+*{
+    /* border:1px solid rgb(253, 19, 19); */
+    font-family: 'New Tegomin', serif;
+    text-decoration: bold;
+    font-size: 22px;
+}
+/* Container for entire UserCard*/
+.container{
+    margin-left: 60px;
+    margin-top: 35px;
+    height:320px;
+    width:500px;
+    background-color: aliceblue;
+}
+/* image */
+img#profile{
+    margin-left: 120px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+} 
+/* Css for top half of card */
+#header{
+    height: 100px;
+    width: 500px;
+    background-color: rgb(53, 177, 235);
+    border: 1px solid  rgb(0, 0, 0);;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+/* Css for bottom half of card */
+.content{
+    margin-top: 12px;
+    height: 200px;
+    width: 500px;
+    border: 2px solid rgb(105, 68, 68);
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+
+}
+/* Awesome Town */
+h2{
+    margin-left: 180px;
+    margin-top: 15px;
+    position: fixed;
+    font-weight: bold;
+    font-size: 42px;
+}
+/* MapMarker - image next to Awesome Town - positioning & etc. */
+img#marker{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 17px;
+    width: 10px;
+    position: absolute;
+}
+/* MapMarker - image next to edit profile - positioning & etc. */
+img#gear{
+    margin-top: 160px;
+    margin-left: 20px;
+    height:20px;
+    width:20px;
+    position: absolute;
+}
+/* this is to edit the three <p> elements within the bottom half of the UserCard */
+p{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
