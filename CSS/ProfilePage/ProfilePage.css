@@ -1,0 +1,269 @@
+*{
+    /* border: .1px dashed rebeccapurple;  */
+    padding: 0;
+    margin: 0;
+    font-family: 'New Tegomin', serif;
+    text-decoration: bold;
+    font-size: 22px;
+}
+.navBar{
+    display:flex;
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    background-image: url("icons/runescape-splash.jpg");
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.coupe{
+    padding:0 25px;
+    background-color:rgb(53, 177, 235);
+    border-radius: 10px;
+    border:1px solid aliceblue;
+}
+.content{
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: 1200px;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: beige;
+    background-image: url("icons/background.jpg");
+}
+
+/* COL1 AND ITS CONTENT */
+.col1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* PROFILE */
+.profileHeader{
+    height: 100px;
+    background-color: rgb(53, 177, 235);
+    border: 1px solid  rgb(0, 0, 0);;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+.profileHeaderPhoto{
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+} 
+.profileHeader h2 {
+    margin-left: 180px;
+    margin-top: 15px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 42px;
+}
+.profileBody{
+    margin-top: 12px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+.money{
+    height: 40px;
+    width: 40px;
+}
+.profileBody p {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.profileBodyGear{
+    margin-top: 20px;
+    margin-left: 20px;
+    height:20px;
+    width:20px;
+    position: absolute;
+}
+.profileBodyMarker{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 17px;
+    width: 10px;
+    position: absolute;
+}
+
+
+/* EDITQUITTE */
+.etiquette{
+    display: flex;
+    margin-top: 12px;
+    height: 400px;
+    border: 2px solid rgb(0, 0, 0); 
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+.etiquette h2 {
+    height: 100%;
+    background-color: rgb(53, 177, 235);
+    border: 1px solid  rgb(0, 0, 0);;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    align-self: center;
+}
+.etiquetteBody {
+    margin-left: 20px;
+    display: flex;
+    height: 400px;
+    width: 85%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    border-radius: 5px;
+}
+.music{
+    margin-top: 20px;
+}
+/* Col2 and it's contents */
+.col2{
+    display: flex;
+    flex-direction: column;
+}
+/* all content for friends request */
+.friendrqst{
+    flex-direction: column;
+    display: flex;
+    margin-top: 12px;
+    height: 420px;
+    border: 2px solid rgb(0, 0, 0); 
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+.friendrqstHeader{
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    height: 100px;
+    background-color: rgb(53, 177, 235);
+    border: 1px solid  rgb(0, 0, 0);;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+.friendrqstHeader p {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+.friendrqstHeader h2{
+    margin-left: 20px;
+}
+.friendrqstBodyCircle{
+    height: 40px;
+    width: 40px;
+}
+.friendrqstBody {
+    flex-wrap: wrap;
+    display: flex;
+    height: 300px;
+    width: 350px;
+    margin-left: 40px;
+    align-self: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.friendrqstBodyRows{
+    display: flex;
+    align-items: center;
+}
+
+
+/* All content for friends list */
+.friendList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    height: 400x;
+    border: 2px solid rgb(0, 0, 0); 
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+.friendListHeader{
+    height: 100px;
+    background-color: rgb(53, 177, 235);
+    border: 1px solid  rgb(0, 0, 0);;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.friendListHeader p {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+.friendListHeader h2{
+    margin-left: 20px;
+}
+.friendListBody{
+    margin-top:20px ;
+    flex-wrap: wrap;
+    display: flex;
+    height: 300px;
+    width: 250px;
+    align-self: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.friendListBodyRows{
+    align-items: center;
+    justify-content: space-between;
+    display:flex;
+}
+.friendListFooter{
+    height: 100px;
+    margin-top: 45px;
+    background-color: rgb(53, 177, 235);
+    border: 1px solid  rgb(0, 0, 0);;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.friendListFooter p {
+
+}
+
+
+/* All of the profile pics but main styled */
+.pic{
+    border:1px solid lightblue;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+.friendrqstBody h3{
+
+}
