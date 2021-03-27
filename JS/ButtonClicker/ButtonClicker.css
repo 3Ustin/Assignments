@@ -1,0 +1,23 @@
+.button0{
+    position: absolute;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+}
+
+.button1{
+    background-color: rgb(130, 130, 223);
+    margin-left: 200px;
+    height: 200px;
+    width: 200px;
+}
+.button2{
+    background-color: rgb(35, 224, 152);
+    margin-left: 400px;
+    height: 200px;
+    width: 200px;
+}
+.shadow{
+    box-shadow: 5px 5px 5px gray;
+}
+
