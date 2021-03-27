@@ -26,8 +26,8 @@ console.log(pizza);
 
 function randomPizzaOven(sauce,cheese,vegToppings,meatToppings,doughType){
     var pizza={};
-    pizza.sauce = sauce[Math.round(Math.random()*(sauce.length-1))];
-    pizza.cheese = cheese[Math.round(Math.random()*(cheese.length-1))];
+    pizza.sauce = sauce[Math.floor(Math.random()*(sauce.length))];
+    pizza.cheese = cheese[Math.ceil(Math.random()*(cheese.length-1))];
     pizza.vegToppings = vegToppings[Math.round(Math.random()*(vegToppings.length-1))];
     pizza.meatToppings = meatToppings[Math.round(Math.random()*(meatToppings.length-1))];
     pizza.doughType = doughType[Math.round(Math.random()*(doughType.length-1))];

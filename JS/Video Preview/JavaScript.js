@@ -1,7 +1,11 @@
+//Mouse Over the video plays it.
 function onMouseOver(sourceVid){
-    var x = sourceVid.classList.add("video");
-    console.log(x);
+    sourceVid.classList.add("video");
+    sourceVid.play();
 }
+
+//Mouse Over the video pause it.
 function onMouseOut(sourceVid){
     var x = sourceVid.classList.remove("video");
+    sourceVid.pause();
 }

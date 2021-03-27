@@ -20,5 +20,22 @@ function reverse(arr){     //arr = ["a","b","c","d","e"];
     console.log(arr); //logs out the newly edited array.
 }
 reverse(["a","b","c","d","e"]);
+//Less Itteravily + computationally complex. Better for computer
+function reverse(arr){     //arr = ["a","b","c","d","e"];
+    var temp = []; //temp stands for temparary
+    for(var i=arr.length-1; i > 0;i--){ //the loop that loops through half of the array.
+        temp[i] = arr[i];
+    }
+    console.log(arr); //logs out the newly edited array.
+}
+reverse(["a","b","c","d","e"]);
+
+
+alphabet=["a","b","c","d","e"];
+
+
 alphabet=["a","b","c","d","e"];
 console.log(alphabet.reverse());
+
+
+alphabet=["a","b","c","d","e"];

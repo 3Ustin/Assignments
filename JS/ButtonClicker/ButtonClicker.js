@@ -5,6 +5,11 @@ function onMouseOut(element){
     element.classList.remove("shadow");
 }
 
+// EXAMPLE OF AUIDO FILE WORKING!!
+// var bgm = new Audio('sound/bgm/[08]FallOfFall~AkimekuTaki.mp3');
+// bgm.play();
+
+
 var clicks = 0;
 function onClick(button){
     console.log(clicks);
