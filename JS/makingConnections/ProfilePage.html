@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data, title, and css link -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ProfilePage</title>
+        <link rel="stylesheet" type="text/css" href="ProfilePage.CSS">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+        <!-- NavBar on top of screen -->
+        <div class="navBar">
+            <h1>Profile</h1>
+            <p>Skills Page</p>
+            <p>Quests</p>
+            <p>Bots</p>
+            <h3 class="coupe">Teleport</h3>
+        </div>
+        <!-- The content for the Profile Box -->
+        <div class="content">
+            <div class="col1">
+                <!-- The profile section of the content page -->
+                <div class="contentProfile">
+                    <div class="profileHeader">
+                        <img class="profileHeaderPhoto" src="icons/pic8.png">
+                        <h2>ThreeUstin</h2>
+                    </div>
+                    <div class="profileBody">
+                        <img class="profileBodyMarker" src="icons/map-marker.png">
+                        <p>Falador</p>
+                        <p>Brining in <img class="money" src="icons/money.png"> Since 2007 <br> Woodcutting 99!</p>
+                        <img class="profileBodyGear" src="icons/gear.png">
+                        <p>edit profile</p>
+                    </div>
+                </div>
+                <audio class="music" controls><source src="Music/background.mp3" type="audio/mpeg"></audio>
+                <!-- Education Box -->
+                <div class="etiquette">
+                    <!-- Education Box Header -->
+                    <h2>Skill Levels</h2>
+                    <!-- Education Box Body -->
+                    <div class="etiquetteBody">
+                        <h3>I lost my character so I can't show it here.</h3>
+                        <p>99 Woodcutting will do that.</p>
+                        <p>Might've lost me password I guess.<br>Maybe lost in the woods?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+                <!-- friend request content box -->
+                <div class="friendrqst">
+
+                    <!-- header of friend request box-->
+                    <div class="friendrqstHeader">
+                        <p>3</p>
+                        <h2>Friend Requests</h2>
+                    </div>
+
+                    <!-- body of friend rquest box -->
+                    <div class="friendrqstBody">
+                        <!-- First Row -->
+                        <div class="friendrqstBodyRows">
+                            <img class="pic" src="icons/pic0.jpg">
+                            <h3>Zezima</h3>
+                            <img class="friendrqstBodyCircle" src="icons/accept-circle.png" onclick="acceptFriend(this)">
+                            <img class="friendrqstBodyCircle" src="icons/close-circle.png" onclick="declineFriend(this)">
+                        </div>
+
+                        <!-- Second Row -->
+                        <div class="friendrqstBodyRows">
+                            <img class="pic" src="icons/pic1.jpg">
+                            <h3>Salmoneus</h3>
+                            <img class="friendrqstBodyCircle" src="icons/accept-circle.png" onclick="acceptFriend(this)">
+                            <img class="friendrqstBodyCircle" src="icons/close-circle.png" onclick="declineFriend(this)">
+                        </div>
+                    
+
+                        <!-- Second Row -->
+                        <div class="friendrqstBodyRows">
+                            <img class="pic" src="icons/pic2.jpg">
+                            <h3>SirPugger</h3>
+                            <img class="friendrqstBodyCircle" src="icons/accept-circle.png" onclick="acceptFriend(this)">
+                            <img class="friendrqstBodyCircle" src="icons/close-circle.png" onclick="declineFriend(this)">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- friend List content box -->
+                <div class="friendList">
+
+                    <!-- header of friend List -->
+                    <div class="friendListHeader">
+                        <p>5</p>
+                        <h2>Friends List</h2>
+                    </div>
+
+                    <!-- body of friend List -->
+                    <div id="friendListBody">
+                        <div class="friendListBodyRows"><img class="pic" src="icons/pic3.jpg">
+                        <h3>Rap69</h3></div>
+                        <div class="friendListBodyRows"><img class="pic" src="icons/pic4.jpg">
+                        <h3>Hostile27</h3></div>
+                        <div class="friendListBodyRows"><img class="pic" src="icons/pic5.jpg">
+                        <h3>Loopish</h3></div>
+                        <div class="friendListBodyRows"><img class="pic" src="icons/pic6.jpg">
+                        <h3>Pker27</h3></div>
+                        <div class="friendListBodyRows"><img class="pic" src="icons/pic7.jpg">
+                        <h3>RaodToKnoWhere</h3></div>
+                    </div>
+
+                    <!-- footer of friend List -->
+                    <div class="friendListFooter">
+                        <p> OSRS RULES!</p>
+                    </div>
+                <!-- friend list end -->
+                </div>
+                <!-- col2 end -->
+            </div>
+        </div>
+
+
+        <script src="ProfilePage.js"></script>
+    </body>
+</html>
