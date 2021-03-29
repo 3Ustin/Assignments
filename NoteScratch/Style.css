@@ -17,3 +17,9 @@ a{
     color: aqua;
     display: inline-block;
 }
+
+#img{
+    display: inline;
+    width: 1300px;
+    height: 100px;
+}

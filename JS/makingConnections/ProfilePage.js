@@ -14,15 +14,27 @@ function acceptFriend(thisElement){
     parseInt(document.querySelector(".friendListHeader").
     firstElementChild.textContent) + 1;
     
-    //create children
-    var image = document.createElement("img");
-    
+    //getting old elements to copy to new elements
+    var pic = thisElement.parentElement.querySelector(".pic");
+    console.log(pic);
+    var pBody = thisElement.parentElement.querySelector(".friendrqstBodyP");
+    console.log(pBody);
 
-    var paragraph = document.createElement("P");
-    paragraph.innerHTML = "yellow belly";
-    console.log(paragraph);
-    document.getElementById("friendListBody").
-    appendChild(paragraph);
+    //creating new elements
+    var image = document.createElement("img");
+    var words = document.createElement("H3");
+
+    image.src = pic.src;
+    words.innerHTML = pBody.innerText;
+    //To assign the css classes to new element.
+    image.className = pic.className;
+    words.className = pBody.className;
+    //tests
+    console.log(image);
+    console.log(words)
+
+    document.getElementById("friendListBody").appendChild(image);
+    document.getElementById("friendListBody").appendChild(words);
 
 
 }

@@ -80,3 +80,11 @@ function addUp(three){
     three.textContent = 
     parseInt(three.textContent) + 1;
 }
+
+var clicks = 0;
+var style = "";
+function imageSmaller(element){
+    clicks++;
+    style = (900 - clicks*100) + "px";
+    element.style.width = style;
+}
