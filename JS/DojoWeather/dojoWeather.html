@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dojoWeather.css">
+</head>
+<body>
+    <div id="navBar">
+        <h1 id="navBarHeader">Flowers Across America</h1>
+        <div id = "navBarLocations">
+            <h4 class="navBarLocation" onclick="popUp(this)">Zone 1</h4>
+            <h4 class="navBarLocation" onclick="popUp(this)">Zone 2</h4>
+            <h4 class="navBarLocation" onclick="popUp(this)">Zone 3</h4>
+            <h4 class="navBarLocation" onclick="popUp(this)">Zone 4</h4>
+        </div>
+    </div>
+    <div class="header">
+        <h2 id="headerTitle">Top Four Flowers</h2>
+        <div id="contentHeader">
+            <p>temp</p>
+            <select onchange="(selectionClicking())" id="selection" >
+                <option>C°</option>
+                <option>F°</option>
+            </select>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="body">
+        <div class="bodyContent">
+            <h4 class="bodyZone">Zeolots</h4>
+            <img class ="flowers" src="img/peony.jpg" alt="image of a thing">
+            <img class ="weather" src="img/sunny.png" alt="image of a thing">
+            <img class ="rain" src="img/rain.png" alt="image of a thing">
+            <p class="bodyZone"> Zone 2</p>
+            <div class="bodyHL">
+                <p class="bodyHigh">32°</p>
+                <p class="bodyLow">22°</p>
+            </div>
+        </div>
+        <div class="bodyContent">
+            <h4 class="bodyZone" >Peony</h4>
+            <img class ="flowers" src="img/pink.jpg" alt="image of a thing">
+            <img class ="weather" src="img/sunny.png" alt="image of a thing">
+            <p class="bodyZone"> Zone 4</p>
+            <div class="bodyHL">
+                <p class="bodyHigh">12°</p>
+                <p class="bodyLow">10°</p>
+            </div>
+        </div>
+        <div class="bodyContent">
+            <h4 class="bodyZone">Rose</h4>
+            <img class ="flowers" src="img/rose.jpg" alt="image of a thing">
+            <img class ="weather" src="img/sunny.png" alt="image of a thing">
+            <p class="bodyZone"> Zone 3</p>
+            <div class="bodyHL">
+                <p class="bodyHigh">44.4°</p>
+                <p class="bodyLow">09.4°</p>
+            </div>
+        </div>
+        <div class="bodyContent">
+            <h4 class="bodyZone">Tulips</h4>
+            <img class ="flowers" src="img/tulips.jpg" alt="image of a thing">
+            <img class ="weather" src="img/sunny.png" alt="image of a thing">
+            <img class ="rain" src="img/rain.png" alt="image of a thing">
+            <p class="bodyZone"> Zone 1</p>
+            <div class="bodyHL">
+                <p class="bodyHigh">26.7°</p>
+                <p class="bodyLow">13.4°</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <img src="img/cookie.png" alt="image of a thing">
+        <div id="footerContent">
+            <h4>Hey, Listen!</h2>
+            <p>
+                Link wake up! We need you to talk to the Deku Tree! I think it's sick! Please Link save us!
+            </p>
+        </div>
+        <button id="footerButton" onclick="acceptQuest(this)">I'll <br> Save <br> You!</button>
+    </div>
+
+
+    <script src="dojoWeather.js"></script>
+</body>
+</html>

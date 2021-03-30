@@ -1,0 +1,113 @@
+*{
+    border: 1px dashed purple;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: darkolivegreen;
+}
+#navBar{
+    background-color: rgb(61, 175, 228);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+#navBarHeader{
+
+}
+#navBarLocations{
+    display: flex;
+    padding: 20px;
+    padding-right:0px;
+}
+.navBarLocation{
+    margin-right: 20px;
+}
+.header{
+    background-color:brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+#headerTitle{
+    color: bisque;
+}
+#contentHeader{
+    color: bisque;
+    display: flex;
+}
+#selection{
+
+}
+.divider{
+    border-radius: 50%;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+}
+.body{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: brown;
+}
+.bodyContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    background-color: rgba(192, 76, 67, 0.993);
+}
+.flowers{
+    border-radius: 50%;
+    border: 1px dashed coral;
+}
+.weather{
+    margin-top: 85%;
+    margin-left: 60%;
+    position: absolute;
+    border-radius: 50%;
+    height: 20%;
+    width: 30%;
+}
+.rain{
+    margin-top: 85%;
+    margin-left: -60%;
+    position: absolute;
+    border-radius: 50%;
+    height: 20%;
+    width: 30%;
+}
+.bodyZone{
+    color: beige;
+}
+.bodyHL{
+    margin-left: 0px;
+    display: flex;
+}
+.bodyHigh{
+    color: rgba(250, 144, 194, 0.767);
+}
+.bodyLow{
+    color: rgb(133, 80, 255);
+    margin-left: 20px;
+}
+#footer{
+    background-color: rgba(192, 76, 67, 0.993);
+    position: sticky;
+    bottom: 0px;
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+}
+#footerButton{
+    
+}
