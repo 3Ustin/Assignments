@@ -35,9 +35,23 @@ function acceptFriend(thisElement){
 
     document.getElementById("friendListBody").appendChild(image);
     document.getElementById("friendListBody").appendChild(words);
-
-
 }
+
+function editButton(element){
+    element.id = "profileEdit";
+}
+function editButtonOut(element){
+    element.id = "";
+}
+//THIS IS A FUTURE TEST
+// function buttonClicking(element){
+//     var body = element.parentElement;
+//     var userData = document.createElement("FORM");
+//     userData.
+//     console.log(userData);
+//     body.appendChild(userData);
+// }
+
 // This is the function for removing declined friends 
 //      and subtracting friend requests.
 function declineFriend(thisElement){

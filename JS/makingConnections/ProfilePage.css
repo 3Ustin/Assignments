@@ -82,6 +82,10 @@
     margin-top: 10px;
     margin-left: 50px;
 }
+#profileEdit{
+    color: blue;
+    font-weight: bold;
+}
 .profileBodyGear{
     margin-top: 20px;
     margin-left: 20px;
