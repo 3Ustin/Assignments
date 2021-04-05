@@ -31,7 +31,7 @@ function acceptFriend(thisElement){
     words.className = pBody.className;
     //tests
     console.log(image);
-    console.log(words)
+    console.log(words);
 
     document.getElementById("friendListBody").appendChild(image);
     document.getElementById("friendListBody").appendChild(words);

@@ -140,6 +140,20 @@ for(var i = 0; i<pokémon.length;i++){
     }
 }
 
+// complete the following function
+function flatten(arr2d) {
+    var flat = [];
+    for(var i = 0; i < arr2d.length; i++){
+        for(var k = 0; k < arr2d[i].length; k++){
+            flat.push(arr2d[i][k]);
+        }
+    }
+    return flat;
+}
+    
+var result = flatten( [ [2, 5, 8], [3, 6, 1], [5, 7, 7] ] );
+console.log(result); // we expect to get back [2, 5, 8, 3, 6, 1, 5, 7, 7]
+
 
 
 
@@ -194,3 +208,31 @@ function reverseString(string){
         stringStuff
     }
 }
+reverseString("Derel");
+
+
+
+
+function reverseString(input){
+    var newString = "";
+    var exampleString = "";
+    for(var i=input.length - 1; i>=0; i--){
+        console.log(newString);
+        exampleString += input[i];
+        newString += input.charAt(i);
+    }
+    return exampleString;
+}
+console.log(reverseString("Derel"));
+
+
+var derel = "derel";
+var input = "derel";
+input.charAt(input.length - 1) = input.charAt(0);
+
+console.log(input);
+
+
+
+
+
